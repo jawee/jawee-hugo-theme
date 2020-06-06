@@ -1,4 +1,4 @@
-<h4 class="latest-posts-heading">Latest posts</h4>
+<h4 class="latest-posts-heading">Posts</h4>
 <ul>
     {{ range where .Site.RegularPages "Section" "in" (.Site.Params.postSections | default (slice "posts")) | first 5}}
     <li class="list-entry">
