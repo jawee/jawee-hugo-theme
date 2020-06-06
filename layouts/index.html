@@ -7,17 +7,14 @@
         {{- partial "intro.html" . -}}
         {{- block "main" . }}{{- end }}
 
-
-        <h4>Latest posts</h4>
+        <hr>
+        <h4 class="latest-posts-heading">Latest posts</h4>
         <ul>
             {{ range where .Site.RegularPages "Section" "in" (.Site.Params.postSections | default (slice "posts"))}}
             <li class="list-entry">
                 <a class="list-entry-link" href="{{ .Permalink }}">{{ .Title }}</a>
                 <p class="meta">
                     {{ if not .Date.IsZero }} {{ .Date.Format .Site.Params.dateformat}} {{end}}
-                <p class="excerpt">
-                    {{ .Description }}
-                </p>
             </li>
             {{ end }}
         </ul>

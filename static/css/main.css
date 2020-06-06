@@ -4,6 +4,7 @@
 
 body {
     background-color: #fcfcfc;
+    color: #333333;
 }
 
 .meta {
@@ -20,19 +21,58 @@ a:focus, a:hover {
 
 .author-heading {
     width: 100%;
+    font-weight: 300;
+    color: #333333;
 }
 
 .intro-heading {
     width: 100%;
     color: #666666;
+    font-weight: 200;
 }
 
 .description-heading {
     width: 100%;
     color: #999999;
+    font-weight: 200;
+}
+
+.powered-heading {
+    width: 100%;
+}
+
+.copyright-heading {
+    width: 100%;
+}
+
+.latest-posts-heading {
+    font-weight: 100;
 }
 
 .social {
     margin: 0 auto;
     display: block;
 }
+
+header {
+    margin-top: 75px;
+}
+
+hr {
+    display: block;
+}
+
+footer {
+    color: #999999;
+}
+
+footer h6 {
+    font-size: 0.75rem;
+    font-weight: 100;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
