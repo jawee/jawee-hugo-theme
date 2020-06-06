@@ -1,3 +1,38 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
+
+body {
+    background-color: #fcfcfc;
+}
+
+.meta {
+    color: #666666;
+}
+
+a {
+    color: #526d7a;
+}
+
+a:focus, a:hover {
+    color: #23527c;
+}
+
+.author-heading {
+    width: 100%;
+}
+
+.intro-heading {
+    width: 100%;
+    color: #666666;
+}
+
+.description-heading {
+    width: 100%;
+    color: #999999;
+}
+
+.social {
+    margin: 0 auto;
+    display: block;
+}

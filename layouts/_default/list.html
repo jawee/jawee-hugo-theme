@@ -1,0 +1,16 @@
+{{ define "main" }}
+<section id="list-pane" class="row list">
+    <ul >
+      {{ range .Data.Pages.ByPublishDate.Reverse }}
+      <li class="list-entry">
+        <a class="list-entry-link" href="{{ .Permalink }}">{{ .Title }}</a>
+        <p class="meta">
+          {{ if not .Date.IsZero }} {{ .Date.Format .Site.Params.dateformat}} {{end}}
+        <p class="excerpt">
+        {{ .Description }}
+        </p>
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+{{ end }}
