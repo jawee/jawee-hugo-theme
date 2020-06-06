@@ -3,7 +3,6 @@
     {{ range where .Site.RegularPages "Section" "in" (.Site.Params.postSections | default (slice "projects")) | first 5}}
     <div class="col-sm">
         <a class="list-entry-link" href="{{ .Permalink }}"><img src="{{ .Page.Params.image }}"></a>
-        
     </div>
     {{ end }}
 </div>
