@@ -25,6 +25,14 @@ a:focus, a:hover {
     color: #333333;
 }
 
+.title {
+    font-weight: 100;
+}
+
+.published-date {
+    font-weight: 100;
+}
+
 .intro-heading {
     width: 100%;
     color: #666666;
@@ -75,4 +83,3 @@ ul {
     list-style-type: none;
     padding-left: 0;
 }
-

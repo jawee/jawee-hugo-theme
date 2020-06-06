@@ -1,0 +1,11 @@
+<h4 class="latest-posts-heading">Latest posts</h4>
+<ul>
+    {{ range where .Site.RegularPages "Section" "in" (.Site.Params.postSections | default (slice "posts")) | first 5}}
+    <li class="list-entry">
+        <a class="list-entry-link" href="{{ .Permalink }}">{{ .Title }}</a>
+        <p class="published-date">
+            {{ if not .Date.IsZero }} {{ .Date.Format .Site.Params.dateformat}} {{end}}
+    </li>
+    {{ end }}
+</ul>
+<a href="/posts">All posts</a>
