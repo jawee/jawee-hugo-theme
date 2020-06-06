@@ -5,6 +5,7 @@
         <a class="list-entry-link" href="{{ .Permalink }}">{{ .Title }}</a>
         <p class="published-date">
             {{ if not .Date.IsZero }} {{ .Date.Format .Site.Params.dateformat}} {{end}}
+        </p>
     </li>
     {{ end }}
 </ul>
