@@ -87,3 +87,7 @@ ul {
     list-style-type: none;
     padding-left: 0;
 }
+
+.home-link h4 {
+    font-weight: 100;
+}
